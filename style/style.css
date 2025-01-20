@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0;
+}
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+.hover:hover {
+  transform: scale(1.1);
+}
+
+/* nav-bar section */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.home-btn {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fea301;
+}
+
+.about-btn {
+  font-weight: 500px;
+  font-size: 1.25rem;
+  color: #01acfd;
+}
+
+.facilities-btn {
+  font-weight: 500px;
+  font-size: 1.25rem;
+  color: #05d4df;
+}
+
+.admission-btn {
+  font-weight: 500px;
+  font-size: 1.25rem;
+  color: #5d58ef;
+}
+
+.contact-btn {
+  height: 50px;
+  width: 197px;
+  background-color: #fea301;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600px;
+  border: 0px;
+  border-radius: 12px;
+}
+
+.all-nav-btn {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+  /* nav section */
+  .logo-text,
+  .all-nav-btn,
+  .contact-btn {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #nav {
+    margin: 16px 12px;
+  }
+
+  .line {
+    border-top: 0.5px solid;
+    color: #FEA301;
+    width: 100%;
+  }
+}
