@@ -442,6 +442,61 @@ a {
   justify-content: center;
 }
 
+/* footer section */
+
+.footer-body {
+  padding-top: 100px;
+  background-color: #01acfd;
+  height: 400px;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-logo {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 81.65px;
+  width: 82.9px;
+}
+
+.footer-logo h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 2.634rem;
+}
+
+.footer-body p {
+  font-weight: 400px;
+  font-size: 1.25rem;
+  color: white;
+  margin-top: 35.35px;
+}
+
+.about-school {
+  color: white;
+}
+
+.about-school h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.about-school p {
+  font-weight: 500px;
+  font-size: 1.25rem;
+}
+
+.social-media h3{
+    color: white;
+    font-size: 1.625rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   /* responsive nav section */
@@ -509,4 +564,16 @@ a {
   .story-1 {
     display: none;
   }
+
+  /* responsive footer section */
+
+  .footer-body{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    padding-left: 20px;
+  }
+
+
+
 }
