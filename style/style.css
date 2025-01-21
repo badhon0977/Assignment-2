@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: 0;
 }
 
 .quicksand-font {
@@ -13,8 +13,20 @@
   font-style: normal;
 }
 
+.raleway-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
 .hover:hover {
   transform: scale(1.1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* nav-bar section */
@@ -83,6 +95,13 @@
   display: none;
 }
 
+.line {
+  border-top: 0.5px solid;
+  color: #fea301;
+  width: 100%;
+  display: none;
+}
+
 /* banner sections */
 
 .orange-text {
@@ -122,6 +141,103 @@
   justify-content: space-around;
 }
 
+/* main part */
+/* curriculum-section */
+
+.curriculum-titel {
+  font-weight: bold;
+  font-size: 2.875rem;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  border-radius: 18.86px;
+  height: 476.78px;
+  width: 367.8px;
+  padding: 53px 40px;
+}
+
+.all-card h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.all-card p {
+  font-weight: 500px;
+  font-size: 0.943rem;
+}
+
+.card-1 h6 {
+  color: #64c8ff;
+  font-weight: bold;
+  font-size: 0.943rem;
+}
+
+.card-2 h6 {
+  color: #f0aa00;
+  font-weight: bold;
+  font-size: 0.943rem;
+}
+
+.card-3 h6 {
+  color: #8700ff;
+  font-weight: bold;
+  font-size: 0.943rem;
+}
+
+.all-card {
+  display: flex;
+  justify-content: center;
+  gap: 28.29px;
+  margin-top: 80px;
+}
+
+.card-1 {
+  background: linear-gradient(to bottom, #def5ff, #ffffff);
+  border: 0.5px solid #def5ff;
+}
+.card-2 {
+  background: linear-gradient(to bottom, #fff4dc, #ffffff);
+  border: 0.5px solid #fff4dc;
+}
+.card-3 {
+  background: linear-gradient(to bottom, #f2e8ff, #ffffff);
+  border: 0.5px solid #f2e8ff;
+}
+
+.curriculum-section {
+  background-image: url(../assets/bg.png);
+}
+
+.arrow-icon {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #fea301;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.arrow-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+/* Our Stories section */
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   /* responsive nav section */
@@ -130,7 +246,8 @@
   .contact-btn {
     display: none;
   }
-  .menu-icon {
+  .menu-icon,
+  .line {
     display: block;
   }
   #nav {
@@ -139,17 +256,12 @@
     justify-content: space-between;
   }
 
-  .line {
-    border-top: 0.5px solid;
-    color: #fea301;
-    width: 100%;
-  }
-
   /* responsive banner section */
 
   .banner-titel {
     font-size: 2rem;
     text-align: center;
+    margin-top: 20px;
   }
   .banner-description {
     font-size: 0.875rem;
@@ -171,5 +283,20 @@
 
   .banner-img {
     padding: 20px 10.21px;
+  }
+
+  /* responsive curriculum-section */
+
+  .all-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    height: 321.28px;
+    width: 430px;
   }
 }
