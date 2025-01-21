@@ -490,11 +490,11 @@ a {
   font-size: 1.25rem;
 }
 
-.social-media h3{
-    color: white;
-    font-size: 1.625rem;
-    font-weight: bold;
-    margin-bottom: 32px;
+.social-media h3 {
+  color: white;
+  font-size: 1.625rem;
+  font-weight: bold;
+  margin-bottom: 32px;
 }
 
 /* responsive media query */
@@ -567,13 +567,10 @@ a {
 
   /* responsive footer section */
 
-  .footer-body{
+  .footer-body {
     display: flex;
     flex-direction: column;
     height: 900px;
     padding-left: 20px;
   }
-
-
-
 }
